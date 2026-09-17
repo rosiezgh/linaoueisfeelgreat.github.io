@@ -946,7 +946,7 @@
 /* ── Contact page ────────────────────────────────────────────────── */
 .contact-band {
   position: relative;
-  height: 340px;
+  height: 480px;
   overflow: hidden;
 }
 
@@ -956,12 +956,6 @@
   object-fit: cover;
   object-position: center;
   display: block;
-}
-
-.contact-band__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.197);
 }
 
 .contact-band__title {
@@ -974,7 +968,7 @@
   align-items: center;
   justify-content: center;
   margin: 0;
-  color: #153862;
+  color: #ffffff;
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -1146,7 +1140,7 @@
 
 @media (max-width: 900px) {
   .contact-band {
-    height: 260px;
+    height: 520px;
   }
 
   .contact-band__title {
@@ -1177,7 +1171,8 @@
 
 @media (max-width: 600px) {
   .contact-band {
-    height: 200px;
+    height: 440px;
+    margin: 0;
   }
 
   .contact-band__title {
