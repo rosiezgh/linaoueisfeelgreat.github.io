@@ -95,6 +95,8 @@
 
 /**Hero section**/
 .hero {
+  position: relative;
+  overflow: hidden;
   background-color: #153862;
   height: 650px;
   display: flex;
@@ -103,7 +105,23 @@
   text-align: left;
 }
 
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 .hero-text {
+  position: relative;
+  z-index: 1;
   max-width: 500px;
   padding-left: 80px;
   padding-top: 40px;
@@ -184,13 +202,6 @@
 
 .hero-text a:focus-visible {
   outline-color: #ffffff;
-}
-
-.hero-img > img{
-  height: 650px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 /**Products section**/
@@ -899,20 +910,25 @@
 }
 
 .hero {
-  height: 400px;
-  padding-top: 80px;
+  height: auto;
+  aspect-ratio: 512 / 872;
+  margin-top: 80px;
   justify-content: center;
 }
 
 .hero-text {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 32px;
-  padding-bottom: 24px;
+  max-width: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 32px 24px;
 }
 
-.hero-img > img{
-  height: 400px;
+.hero-main {
+  align-items: center;
 }
 
 .custom-button {
@@ -925,25 +941,6 @@
   padding-top: 1.5rem;
 }
 
-}
-
-@media (max-width: 650px) {
-  .hero {
-    height: 400px;
-    margin: 0px;
-  }
-
-  .hero-img > img{
-    height: 400px;
-    padding: 0px;
-  }
-}
-
-@media (max-width: 450px){
-  .hero-img > img{
-    height: 300px;
-    padding: 0px;
-  }
 }
 
 /* ── Contact page ────────────────────────────────────────────────── */
