@@ -138,7 +138,7 @@
 
 .hero-text h1{
   font-size: 3rem;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -903,6 +903,7 @@
 
   .hero-text h1{
   font-size: 2rem;
+  margin-bottom: 32px;
 }
 
 .hero-text p {
